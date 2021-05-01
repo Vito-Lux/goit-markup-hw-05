@@ -22,7 +22,7 @@
       <nav class="header-nav">
         <a class="header-nav__logo" href="./index.html"><span>Web</span>Studio</a>
         <ul class="header-nav__list">
-          <li class="header-nav__item">
+          <li class="header-nav__item current-link">
             <a class="header-nav__link" href="./index.html">Студия</a>
           </li>
           <li class="header-nav__item">
@@ -64,7 +64,7 @@
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         </div>
         <div class="hero-btn">
-          <button class="hero__button" type="button">Заказать услугу</button>
+          <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </div>
     </section>
@@ -134,12 +134,15 @@
         <ul class="our-work__list">
           <li class="our-work__item">
             <img class="our-work__img" src="images/our-work_img_1.jpg" alt="tablet coding" width="370" height="294">
+            <p class="our-work__text">десктопные приложения</p>
           </li>
           <li class="our-work__item">
             <img class="our-work__img" src="images/our-work_img_2.jpg" alt="telephone" width="370" height="294">
+            <p class="our-work__text">мобильные приложения</p>
           </li>
           <li class="our-work__item">
             <img class="our-work__img" src="images/our-work_img_3.jpg" alt="tablet screen" width="370" height="294">
+            <p class="our-work__text">дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -418,6 +421,23 @@
   </footer>
 
   <!--  -->
+
+  <!-- Modal -->
+
+  <div class="modal is-hidden" data-modal>
+    <div class="modal__body">
+      <div class="modal__content">
+        <button class="modal__close-button" data-modal-close>
+          <svg class="modal__close-img" width="11" height="11">
+            <use href="images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+  <script src="js/modal.js"></script>
 
 </body>
 
